@@ -1,0 +1,39 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/turf/closed/wall,/area/space)
+"c" = (/turf/open/floor/carpet,/area/space)
+"d" = (/turf/open/floor/plasteel,/area/space)
+"e" = (/turf/open/floor/plating,/area/space)
+"f" = (/turf/open/floor/grass,/area/space)
+
+(1,1,1) = {"
+abbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaa
+bbcccccbdddddbdddddddddddedddbaaaaaa
+bccccccddddddddddddddddddddddbbbbbaa
+bccccccbdddddbbbbbbbdddddedddbdddbaa
+bccccccbdddddbdddddbbbbbbbdddbdddbaa
+bbbbbbbbbdbbbbdddddedddedddddbdddbaa
+bddddddddddddddddddedddbdddddbdddbaa
+bddddddddddddbdddddedddedddddbdddbaa
+bbddbbbddddddddddddedddbdddddbdddbaa
+bdddddbddddddbeeeeebdddbbbdedbdddbaa
+edddddbbebebebdddddddddddddddddddbaa
+eddddddddddddddddddddddbdddddbbbbbee
+eddddddddddddddddddddddddddddbfffffe
+bbdedbbbbbbbbbbbbbbbbbbbddbbbbfffffe
+aedddeaabddddbddddbddddbddbffffffffe
+aedddeaabddddbddddbddddbddeffffffffe
+abdbdbaabddddbddddbddddbddbffffffffe
+aaaaaaaabbeedbbeedbbeedbddbeeffffffe
+aaaaaaaabddddddddddddddddddddffffffe
+aaaaaaaabdddddddddddddddddbeeffffffe
+aaaaaaaabbeedbbeedbbeedbddeffffffffe
+aaaaaaaabddddbddddbddddbddbffffffffe
+aaaaaaaabddddbddddbddddbddeffffffffe
+aaaaaaaabddddbddddbddddbddbffffffffe
+aaaaaaaabbbbbbbbbbbbbbbbddeffffffffe
+aaaaaaaabdddddddddddddddddbeeffffffe
+aaaaaaaabddddddddddddddddddddffffffe
+aaaaaaaabdddddddddddddddddbeeffffffe
+aaaaaaaabbbbbbbbbbbbbbbbbbbffffffffe
+aaaaaaaaaaaaaaaaaaaaaaaaaaeeeeeeeeee
+"}

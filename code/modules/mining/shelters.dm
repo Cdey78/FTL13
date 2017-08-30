@@ -60,6 +60,16 @@
 		an ash storm."
 	mappath = "_maps/templates/shelter_2.dmm"
 
+	/datum/map_template/shelter/prison
+	name = "Prison"
+	shelter_id = "shelter_prison"
+	description = "All you need to house those prisoners you've been keeping! \
+		Contains: Security lounges, a control center, minor security equipment, \
+		prisoner hydroponics, prisoner mining section, prisoner cells, kitchen, \
+		emergency medical facilities, and everything else needed to accomodate \
+		long-term storage of your local inmates!"
+	mappath = "_maps/templates/shelter_prison.dmm"
+
 /datum/map_template/shelter/beta/New()
 	. = ..()
 	whitelisted_turfs = typecacheof(/turf/closed/mineral)

@@ -73,6 +73,12 @@
 	origin_tech = "engineering=3;bluespace=4"
 	template_id = "shelter_beta"
 
+	/obj/item/weapon/survivalcapsule/prison
+	name = "prison drop point beacon"
+	desc = "A beacon to guide a planetary prison deployable to the surface."
+	origin_tech = "engineering=6"
+	template_id = "shelter_prison"
+
 //Pod objects
 
 //Window
