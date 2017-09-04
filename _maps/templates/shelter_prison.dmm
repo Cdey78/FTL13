@@ -1,39 +1,164 @@
-"a" = (/turf/template_noop,/area/template_noop)
-"b" = (/turf/closed/wall,/area/space)
-"c" = (/turf/open/floor/carpet,/area/space)
-"d" = (/turf/open/floor/plasteel,/area/space)
-"e" = (/turf/open/floor/plating,/area/space)
-"f" = (/turf/open/floor/grass,/area/space)
+"aa" = (/turf/template_noop,/area/template_noop)
+"ab" = (/turf/closed/wall,/area/space)
+"ac" = (/obj/machinery/computer/arcade/battle,/turf/open/floor/carpet,/area/space)
+"ad" = (/obj/machinery/computer/arcade/orion_trail,/turf/open/floor/carpet,/area/space)
+"ae" = (/turf/open/floor/carpet,/area/space)
+"af" = (/obj/structure/chair/comfy{dir = 4},/turf/open/floor/carpet,/area/space)
+"ag" = (/obj/structure/table/wood,/turf/open/floor/carpet,/area/space)
+"ah" = (/obj/structure/filingcabinet/filingcabinet,/turf/open/floor/plasteel/red/corner,/area/space)
+"ai" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/red/corner,/area/space)
+"aj" = (/obj/structure/table/reinforced,/obj/structure/reagent_dispensers/peppertank{pixel_y = 30},/turf/open/floor/plasteel/red/corner,/area/space)
+"ak" = (/obj/structure/table/reinforced,/obj/item/weapon/card/id/prisoner,/obj/item/weapon/card/id/prisoner,/obj/item/weapon/card/id/prisoner,/obj/item/weapon/card/id/prisoner,/obj/item/weapon/storage/box/prisoner,/turf/open/floor/plasteel/red/corner,/area/space)
+"al" = (/obj/structure/filingcabinet/security,/turf/open/floor/plasteel/red/corner,/area/space)
+"am" = (/turf/open/floor/plasteel/showroomfloor,/area/space)
+"an" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/showroomfloor,/area/space)
+"ao" = (/turf/open/floor/plating,/area/space)
+"ap" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/cafeteria,/area/space)
+"aq" = (/obj/structure/chair/stool/bar,/turf/open/floor/plasteel/cafeteria,/area/space)
+"ar" = (/obj/structure/table/reinforced,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/cafeteria,/area/space)
+"as" = (/obj/machinery/door/airlock/security{id_tag = "innerbrig"; name = "security lobby"; req_access = null; req_access_txt = "63"},/turf/open/floor/plasteel,/area/space)
+"at" = (/turf/open/floor/plasteel/red/corner,/area/space)
+"au" = (/obj/structure/chair/office/light{dir = 4},/turf/open/floor/plasteel/red/corner,/area/space)
+"av" = (/obj/machinery/door/airlock/security{id_tag = "innerbrig"; name = "Security"; req_access = null; req_access_txt = "63"},/turf/open/floor/plasteel/showroomfloor,/area/space)
+"aw" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel,/area/space)
+"ax" = (/obj/structure/chair/comfy,/turf/open/floor/carpet,/area/space)
+"ay" = (/obj/machinery/gibber,/turf/open/floor/plasteel/showroomfloor,/area/space)
+"az" = (/obj/machinery/processor,/turf/open/floor/plasteel/showroomfloor,/area/space)
+"aA" = (/obj/machinery/portable_atmospherics/canister/oxygen,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
+"aB" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
+"aC" = (/obj/machinery/vr_sleeper,/turf/open/floor/carpet,/area/space)
+"aD" = (/obj/structure/rack,/obj/item/weapon/shield/riot,/obj/item/weapon/shield/riot,/turf/open/floor/plasteel/red/corner,/area/space)
+"aE" = (/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/open/floor/plasteel/red/corner,/area/space)
+"aF" = (/obj/structure/cable/yellow{d2 = 8; dir = 4; icon_state = "0-8"},/obj/machinery/power/smes/magical{charge = 1e+008; output_level = 10000},/turf/open/floor/plasteel/red/corner,/area/space)
+"aG" = (/obj/structure/closet/secure_closet/brig{name = "Prisoner Equipment"},/turf/open/floor/plasteel/red/corner,/area/space)
+"aH" = (/obj/structure/table/reinforced,/obj/machinery/firealarm{dir = 4; name = "prison lockdown alarm"; pixel_x = -26},/turf/open/floor/plasteel/red,/area/space)
+"aI" = (/obj/structure/table/reinforced,/obj/structure/reagent_dispensers/peppertank{pixel_y = 30},/turf/open/floor/plasteel/red,/area/space)
+"aJ" = (/turf/open/floor/plasteel/red,/area/space)
+"aK" = (/obj/machinery/computer/secure_data,/turf/open/floor/plasteel/red,/area/space)
+"aL" = (/turf/open/floor/plasteel/cafeteria,/area/space)
+"aM" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/cafeteria,/area/space)
+"aN" = (/obj/structure/rack,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/mask/breath,/obj/item/clothing/mask/breath,/turf/open/floor/plasteel,/area/space)
+"aO" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
+"aP" = (/obj/structure/rack,/obj/effect/decal/cleanable/dirt,/obj/item/clothing/mask/breath,/obj/item/clothing/mask/breath,/turf/open/floor/plasteel,/area/space)
+"aQ" = (/obj/machinery/door/airlock/security{id_tag = "innerbrig"; name = "Security"; req_access = null; req_access_txt = "63"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel/red/corner,/area/space)
+"aR" = (/obj/structure/table/reinforced,/obj/machinery/button/door{name = "control room shutters"; pixel_x = -8; pixel_y = -8},/obj/machinery/button/door{id = 656; name = "Cell lockdown"; pixel_x = -8},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{pixel_x = -28},/turf/open/floor/plasteel/red,/area/space)
+"aS" = (/obj/structure/chair/office/light{dir = 8},/turf/open/floor/plasteel/red,/area/space)
+"aT" = (/obj/structure/chair/bridge{dir = 4},/turf/open/floor/plasteel/red,/area/space)
+"aU" = (/obj/machinery/computer/shuttle/labor,/turf/open/floor/plasteel/red,/area/space)
+"aV" = (/obj/machinery/door/poddoor/shutters{id = 8; name = "control room shutters"},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/turf/open/floor/plating,/area/space)
+"aW" = (/turf/open/floor/plasteel,/area/space)
+"aX" = (/obj/machinery/vending/sustenance,/turf/open/floor/plasteel/cafeteria,/area/space)
+"aY" = (/obj/structure/reagent_dispensers/peppertank{pixel_y = 30},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/open/floor/plasteel/red/corner,/area/space)
+"aZ" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"; tag = "90Curve"},/turf/open/floor/plasteel/red/corner,/area/space)
+"ba" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/open/floor/plasteel/red/corner,/area/space)
+"bb" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel/red/corner,/area/space)
+"bc" = (/obj/machinery/door/airlock/security{id_tag = "innerbrig"; name = "Control Center"; req_access = null; req_access_txt = "63"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel/red,/area/space)
+"bd" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"; tag = ""},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel/red,/area/space)
+"be" = (/obj/machinery/computer/security,/turf/open/floor/plasteel/red,/area/space)
+"bf" = (/obj/machinery/door/poddoor/shutters{id = 8; name = "control room shutters"},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"bg" = (/obj/machinery/computer/arcade,/turf/open/floor/plasteel,/area/space)
+"bh" = (/obj/machinery/portable_atmospherics/pump,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
+"bi" = (/obj/machinery/portable_atmospherics/pump,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
+"bj" = (/obj/structure/extinguisher_cabinet{pixel_y = -28},/turf/open/floor/plasteel/red/corner,/area/space)
+"bk" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel/red/corner,/area/space)
+"bl" = (/obj/structure/showcase,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel/red/corner,/area/space)
+"bm" = (/obj/machinery/doorButtons/access_button{idDoor = 131; idSelf = 131; name = "Cell Windoors"; pixel_x = -26},/obj/structure/cable/yellow{d1 = 2; d2 = 4; icon_state = "2-4"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel/red,/area/space)
+"bn" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel/red,/area/space)
+"bo" = (/obj/structure/chair/bridge,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel/red,/area/space)
+"bp" = (/obj/machinery/computer/prisoner,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel/red,/area/space)
+"bq" = (/obj/machinery/door/poddoor/shutters{id = 8; name = "control room shutters"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"; tag = ""},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"; tag = ""},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"br" = (/obj/structure/chair/stool/bar,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/cafeteria,/area/space)
+"bs" = (/obj/structure/rack,/obj/item/weapon/pickaxe,/obj/item/weapon/pickaxe,/obj/item/weapon/pickaxe,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
+"bt" = (/obj/structure/rack,/obj/item/weapon/shovel,/obj/item/weapon/shovel,/obj/item/weapon/shovel,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
+"bu" = (/obj/machinery/door/airlock/security{id_tag = "innerbrig"; name = "Security"; req_access = null; req_access_txt = "63"},/turf/open/floor/plasteel,/area/space)
+"bv" = (/obj/structure/rack,/turf/open/floor/plasteel/red/corner,/area/space)
+"bw" = (/obj/machinery/door/airlock/security{id_tag = "innerbrig"; name = "Control Center"; req_access = null; req_access_txt = "63"},/turf/open/floor/plasteel/red,/area/space)
+"bx" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel/red,/area/space)
+"by" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/red,/area/space)
+"bz" = (/obj/machinery/computer/gulag_teleporter_computer,/turf/open/floor/plasteel/red,/area/space)
+"bA" = (/obj/machinery/computer/crew,/turf/open/floor/plasteel/red,/area/space)
+"bB" = (/obj/machinery/door/poddoor/shutters{id = 8; name = "control room shutters"},/obj/structure/cable/yellow,/turf/open/floor/plating,/area/space)
+"bC" = (/obj/structure/showcase,/turf/open/floor/plasteel,/area/space)
+"bD" = (/obj/structure/closet/secure_closet/brig{name = "Prisoner Equipment"},/turf/open/floor/plasteel,/area/space)
+"bE" = (/obj/structure/chair/comfy{dir = 1},/turf/open/floor/plasteel/red/corner,/area/space)
+"bF" = (/obj/machinery/door/poddoor/shutters{id = 8; name = "control room shutters"},/obj/structure/cable/yellow,/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"; tag = "90Curve"},/turf/open/floor/plating,/area/space)
+"bG" = (/obj/machinery/door/poddoor/shutters{id = 8; name = "control room shutters"},/obj/structure/cable/yellow{d2 = 8; dir = 1; icon_state = "0-8"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plating,/area/space)
+"bH" = (/obj/machinery/door/poddoor/shutters{id = 8; name = "control room shutters"},/obj/structure/cable/yellow{d2 = 8; dir = 1; icon_state = "0-8"},/turf/open/floor/plating,/area/space)
+"bI" = (/obj/machinery/door/airlock/glass{name = "Cafateria"},/turf/open/floor/plasteel/cafeteria,/area/space)
+"bJ" = (/obj/structure/tank_dispenser/oxygen,/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel,/area/space)
+"bK" = (/obj/structure/chair/comfy{dir = 4},/turf/open/floor/plasteel,/area/space)
+"bL" = (/obj/structure/cable/yellow,/turf/open/floor/plating,/area/space)
+"bM" = (/obj/structure/cable/yellow,/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"bN" = (/obj/machinery/door/airlock/glass,/turf/open/floor/plasteel,/area/space)
+"bO" = (/obj/machinery/door/airlock/maintenance_hatch{name = "Mining"},/turf/open/floor/plasteel,/area/space)
+"bP" = (/obj/machinery/door/airlock/security{id_tag = "innerbrig"; name = "Inmate Section"; req_access = null; req_access_txt = "63"},/turf/open/floor/plasteel,/area/space)
+"bQ" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel,/area/space)
+"bR" = (/obj/structure/noticeboard,/turf/closed/wall,/area/space)
+"bS" = (/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/obj/structure/grille,/obj/structure/window/reinforced/fulltile,/turf/open/floor/plating,/area/space)
+"bT" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"; tag = ""},/obj/structure/cable/yellow{d2 = 2; icon_state = "0-2"},/obj/structure/grille,/obj/structure/window/reinforced/fulltile,/turf/open/floor/plating,/area/space)
+"bU" = (/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"; tag = "90Curve"},/turf/open/floor/plasteel,/area/space)
+"bV" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel,/area/space)
+"bW" = (/obj/machinery/door/airlock/security{id_tag = "innerbrig"; name = "Inmate Section"; req_access = null; req_access_txt = "63"},/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel,/area/space)
+"bX" = (/obj/machinery/door/airlock/glass,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel,/area/space)
+"bY" = (/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"; tag = ""},/turf/open/floor/plasteel,/area/space)
+"bZ" = (/turf/open/floor/grass,/area/space)
+"ca" = (/obj/structure/holohoop,/turf/open/floor/grass,/area/space)
+"cb" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow,/obj/structure/grille,/obj/structure/window/reinforced/fulltile,/turf/open/floor/plating,/area/space)
+"cc" = (/obj/machinery/door/airlock/external,/turf/open/floor/plasteel,/area/space)
+"cd" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/open/floor/plasteel/stairs/left,/area/space)
+"ce" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/plasteel/stairs/right,/area/space)
+"cf" = (/obj/structure/bed,/obj/item/weapon/bedsheet/orange,/turf/open/floor/plasteel,/area/space)
+"cg" = (/obj/structure/chair/stool,/turf/open/floor/plasteel,/area/space)
+"ch" = (/obj/machinery/door/airlock/external,/obj/structure/fans/tiny,/turf/open/floor/plating,/area/space)
+"ci" = (/obj/structure/urinal{pixel_x = -32},/obj/structure/window/reinforced/tinted{dir = 4},/obj/structure/sink/kitchen{name = "Sink"; pixel_y = -32},/obj/machinery/shower{dir = 8; icon_state = "shower"; name = "emergency shower"},/turf/open/floor/plasteel,/area/space)
+"cj" = (/obj/machinery/door/poddoor/shutters/preopen{id = 656},/turf/open/floor/plating,/area/space)
+"ck" = (/obj/machinery/door/poddoor/shutters/preopen{id = 656},/obj/machinery/door/window/brigdoor/security/cell/northleft{id = 131; interact_open = 1},/obj/machinery/door/window/brigdoor/security/cell/southleft{interact_open = 1},/turf/open/floor/plasteel,/area/space)
+"cl" = (/obj/machinery/door/window/brigdoor/security/cell/northleft{id = 131; interact_open = 1},/obj/machinery/door/window/brigdoor/security/cell/southleft{interact_open = 1},/turf/open/floor/plasteel,/area/space)
+"cm" = (/obj/machinery/door/poddoor/shutters/preopen{id = 656},/obj/machinery/door/airlock/glass,/turf/open/floor/plasteel,/area/space)
+"cn" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 4; icon_state = "1-4"; tag = "90Curve"},/turf/open/floor/plasteel,/area/space)
+"co" = (/obj/machinery/door/poddoor/preopen{id = 1221},/obj/machinery/door/airlock/external,/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/plasteel,/area/space)
+"cp" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/turf/open/floor/grass,/area/space)
+"cq" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"; tag = ""},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"; tag = ""},/obj/structure/cable/yellow,/obj/structure/grille,/obj/structure/window/reinforced/fulltile,/turf/open/floor/plating,/area/space)
+"cr" = (/obj/structure/urinal{pixel_x = -32},/obj/structure/window/reinforced/tinted{dir = 4},/obj/structure/sink/kitchen{name = "Sink"; pixel_y = 32},/obj/machinery/shower{dir = 8; icon_state = "shower"; name = "emergency shower"},/turf/open/floor/plasteel,/area/space)
+"cs" = (/turf/open/floor/plasteel/blue,/area/space)
+"ct" = (/turf/open/floor/plasteel/blue/side{dir = 8},/area/space)
+"cu" = (/obj/structure/weightlifter,/turf/open/floor/plasteel,/area/space)
+"cv" = (/obj/machinery/door/airlock/medical,/turf/open/floor/plasteel/blue,/area/space)
+"cw" = (/obj/structure/cable/yellow{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/cable/yellow{d1 = 2; d2 = 8; icon_state = "2-8"; tag = ""},/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"; tag = ""},/obj/structure/cable/yellow,/obj/structure/grille,/obj/structure/window/reinforced/fulltile,/turf/open/floor/plating,/area/space)
+"cx" = (/obj/structure/reagent_dispensers/water_cooler,/turf/open/floor/plasteel,/area/space)
+"cy" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d2 = 4; icon_state = "0-4"},/obj/structure/grille,/obj/structure/window/reinforced/fulltile,/turf/open/floor/plating,/area/space)
+"cz" = (/obj/structure/cable/yellow{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/cable/yellow{d2 = 8; icon_state = "0-8"},/obj/structure/grille,/obj/structure/window/reinforced/fulltile,/turf/open/floor/plating,/area/space)
+"cA" = (/obj/structure/cable/yellow{d1 = 1; d2 = 8; icon_state = "1-8"; tag = ""},/obj/structure/cable/yellow,/obj/structure/grille,/obj/structure/window/reinforced/fulltile,/turf/open/floor/plating,/area/space)
 
 (1,1,1) = {"
-abbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaa
-bbcccccbdddddbdddddddddddedddbaaaaaa
-bccccccddddddddddddddddddddddbbbbbaa
-bccccccbdddddbbbbbbbdddddedddbdddbaa
-bccccccbdddddbdddddbbbbbbbdddbdddbaa
-bbbbbbbbbdbbbbdddddedddedddddbdddbaa
-bddddddddddddddddddedddbdddddbdddbaa
-bddddddddddddbdddddedddedddddbdddbaa
-bbddbbbddddddddddddedddbdddddbdddbaa
-bdddddbddddddbeeeeebdddbbbdedbdddbaa
-edddddbbebebebdddddddddddddddddddbaa
-eddddddddddddddddddddddbdddddbbbbbee
-eddddddddddddddddddddddddddddbfffffe
-bbdedbbbbbbbbbbbbbbbbbbbddbbbbfffffe
-aedddeaabddddbddddbddddbddbffffffffe
-aedddeaabddddbddddbddddbddeffffffffe
-abdbdbaabddddbddddbddddbddbffffffffe
-aaaaaaaabbeedbbeedbbeedbddbeeffffffe
-aaaaaaaabddddddddddddddddddddffffffe
-aaaaaaaabdddddddddddddddddbeeffffffe
-aaaaaaaabbeedbbeedbbeedbddeffffffffe
-aaaaaaaabddddbddddbddddbddbffffffffe
-aaaaaaaabddddbddddbddddbddeffffffffe
-aaaaaaaabddddbddddbddddbddbffffffffe
-aaaaaaaabbbbbbbbbbbbbbbbddeffffffffe
-aaaaaaaabdddddddddddddddddbeeffffffe
-aaaaaaaabddddddddddddddddddddffffffe
-aaaaaaaabdddddddddddddddddbeeffffffe
-aaaaaaaabbbbbbbbbbbbbbbbbbbffffffffe
-aaaaaaaaaaaaaaaaaaaaaaaaaaeeeeeeeeee
+aaabababababababababababababababababababababababababababababaaaaaaaaaaaa
+ababacadaeafagabahaiajakalabamamamamamamamamamamanaoapaqarabaaaaaaaaaaaa
+abaeaeaeaeaeaeasatatauatatavamamamamamamamamamamamawapaqarabababababaaaa
+abaeaxaxaeaeaeabatatatatatabababababababayazamamamaoapaqarabaAaBaAabaaaa
+abafagagaeaCaCabaDaEaFaGaGabaHaIaJaJaKabababababababaLaqaMabaNaOaPabaaaa
+abababababababababaQababababaRaSaJaTaUaVaBaBaWaoaMaqapaLaXabaNaOaNabaaaa
+abawatatatatatataYaZbabbbabcbdaJaJaJbebfaWaWbgabaMaqaLapaLabbhaObiabaaaa
+abaiatatbjatatatbkatbkatblabbmbnbobnbpbqaWaBaWaoaMaqapbraLabbsaBbtabaaaa
+ababbubuabababbvbkatbkatbkbwbxbybzbAbybBaWaBaWabaLaLaLaMaLabbsaObtabaaaa
+abbCaWaWbCbDabbvbkbEbkbEbkabbFbGbGbGbHabaWaBaWabababbIaobIabbJaBaOabaaaa
+aobKaWaWaWaWababbLabbMabbLabaWaWaWaWaBaWaWaWaWbNaWaWaWaBaWbOaOaOaBabaaaa
+aobKaWaWaWaWbPaWaWaWbQaWaWbPaWaWaWaBaBaWaBaBaWbRaWaBaWaWaWabababababbSbT
+aobKaWaWaWaWbPaWaWaWbUbVbVbWbVbVbVbVbVbVbVbVbVbXbYaBaWaBaBabbZcabZcabZcb
+ababccaoccabababababababababababababababababababcdceababababbZbZbZbZbZcb
+aaaoaoaoaoaoaaaaabcfaWcgawabcfaWcgawabcfaWcgawabbQaWabbZbZbZbZbZbZbZbZcb
+aaaoaoaoaoaoaaaaabaWaWaWaWabaWaWaWaWabaWaWaWaWabbQaWaobZbZbZbZbZbZbZbZcb
+aaabchabchabaaaaabciaWaWaWabciaWaWaWabciaWaWaWabbQaWabbZbZbZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaababcjcjckababcjcjclababcjcjclabbQaWabaoaobZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaabawaWaWaWaWaWaWaWaWaWaWaWaWaWcmcnbVcobVcocpcpcpcpcpcpcq
+aaaaaaaaaaaaaaaaabawaWaWaWaWaWaWaWaWaWaWaWaWaWcmbQaWabaoaobZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaababcjcjclababcjcjclababcjcjclabbQaWaobZbZbZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaabcraWaWaWabcraWaWaWabcraWaWaWabbQaWabbZbZbZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaabaWaWaWaWabaWaWaWaWabaWaWaWaWabbQaWaobZbZbZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaabcfaWcgawabcfaWcgawabcfaWcgawabbQaWabbZbZbZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaababababababababababababababababbQaWaobZbZbZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaabcscscscsabctaWaWaWcucuaWcucuaWbQaWabaoaobZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaabcscscscscvctaWaWaWaWaWaWaWaWaWbUbVcobVcocpcpcpcpcpcpcw
+aaaaaaaaaaaaaaaaabcscscscsabctaWaWaWaWaWaWaWaWaWaWcxabaoaobZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaabababababababababababababababababababbZbZbZbZbZbZbZbZcb
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabScyczczczczczczczcA
 "}
