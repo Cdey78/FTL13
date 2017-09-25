@@ -25,6 +25,12 @@
 	result_path = /obj/structure/light_construct/small
 	materials = list(MAT_METAL=MINERAL_MATERIAL_AMOUNT)
 
+/obj/item/wallframe/light_fixture/small/emergency
+	..()
+	name = "emergency light fixture frame"
+	desc = "Specially programmed with magic to activate during extreme emergencies."
+	result_path = /obj/structure/light_construct/small/emergency
+
 /obj/item/wallframe/light_fixture/try_build(turf/on_wall, user)
 	if(!..())
 		return
@@ -144,6 +150,10 @@
 	fixture_type = "bulb"
 	sheets_refunded = 1
 
+/obj/structure/light_construct/small/emergency
+	..()
+	name = "emergency light fixture frame"
+
 
 
 // the standard tube light fixture
@@ -172,6 +182,7 @@
 								// this is used to calc the probability the light burns out
 
 	var/rigged = 0				// true if rigged to explode
+	var/SM_alert = 0            // If the SM is at 20% integerty or below.
 
 // the smaller bulb light fixture
 
@@ -214,6 +225,8 @@
 				brightness = 4
 				if(prob(5))
 					break_light_tube(1)
+			if("emergency")
+				brightness = 2
 		spawn(1)
 			update(0)
 
@@ -589,6 +602,14 @@
 	base_state = "lbulb"
 	item_state = "contvapour"
 	brightness = 4
+
+/obj/item/weapon/light/bulb/emergency
+	name = "emergency light bulb"
+	desc = "A replacement light bulb for auxillary lighting systems."
+	icon_state = "firelight"
+	base_state = "firelight"
+	item_state = "flight"
+	brightness = 2
 
 /obj/item/weapon/light/throw_impact(atom/hit_atom)
 	if(!..()) //not caught by a mob
