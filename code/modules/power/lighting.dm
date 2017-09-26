@@ -153,6 +153,7 @@
 /obj/structure/light_construct/small/emergency
 	..()
 	name = "emergency light fixture frame"
+	fixture_type = "emergency"
 
 
 
@@ -194,6 +195,16 @@
 	desc = "A small lighting fixture."
 	light_type = /obj/item/weapon/light/bulb
 
+/obj/machinery/light/small/emergency
+	icon_state = "firelight"
+	base_state = "firelight"
+	fitting = "emergency"
+	brightness = 2
+	desc = "A small dim light, telling you when to run."
+	light_type = /obj/item/weapon/light/bulb/emergency
+	idle_power_usage = 0
+	active_power_usage = 0
+	var/sm_alert = 1
 
 
 /obj/machinery/light/Move()
@@ -226,7 +237,10 @@
 				if(prob(5))
 					break_light_tube(1)
 			if("emergency")
-				brightness = 2
+				if(GLOB.emergency_light == 1)
+					set_light(2, 0.5, "#ff0000")
+				else
+					brightness = 0
 		spawn(1)
 			update(0)
 
@@ -606,9 +620,9 @@
 /obj/item/weapon/light/bulb/emergency
 	name = "emergency light bulb"
 	desc = "A replacement light bulb for auxillary lighting systems."
-	icon_state = "firelight"
-	base_state = "firelight"
-	item_state = "flight"
+	icon_state = "flight"
+	base_state = "flight"
+	item_state = "contvapour"
 	brightness = 2
 
 /obj/item/weapon/light/throw_impact(atom/hit_atom)

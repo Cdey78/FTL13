@@ -2,6 +2,7 @@
 //Please do not bother them with bugs from this port, however, as it has been modified quite a bit.
 //Modifications include removing the world-ending full supermatter variation, and leaving only the shard.
 
+GLOBAL_VAR_INIT(emergency_light, 0)
 #define PLASMA_HEAT_PENALTY 15     // Higher == Bigger heat and waste penalty from having the crystal surrounded by this gas. Negative numbers reduce penalty.
 #define OXYGEN_HEAT_PENALTY 1
 #define CO2_HEAT_PENALTY 0.1
@@ -179,9 +180,12 @@
 
 	if(get_integrity() < SUPERMATTER_DELAM_PERCENT)
 		return SUPERMATTER_DELAMINATING
+		if(GLOB.security_level != SEC_LEVEL_DELTA)
+			set_security_level("delta")
 
 	if(get_integrity() < SUPERMATTER_EMERGENCY_PERCENT)
 		return SUPERMATTER_EMERGENCY
+		GLOB.emergency_light = 1
 
 	if(get_integrity() < SUPERMATTER_DANGER_PERCENT)
 		return SUPERMATTER_DANGER
