@@ -9,7 +9,7 @@
 #define LIGHT_BROKEN 2
 #define LIGHT_BURNED 3
 
-
+GLOBAL_VAR_INIT(emergency_light, 0)
 
 /obj/item/wallframe/light_fixture
 	name = "light fixture frame"
@@ -183,7 +183,7 @@
 								// this is used to calc the probability the light burns out
 
 	var/rigged = 0				// true if rigged to explode
-	var/SM_alert = 0            // If the SM is at 20% integerty or below.
+	var/special = 0             //for use in the emergency light
 
 // the smaller bulb light fixture
 
@@ -194,17 +194,6 @@
 	brightness = 4
 	desc = "A small lighting fixture."
 	light_type = /obj/item/weapon/light/bulb
-
-/obj/machinery/light/small/emergency
-	icon_state = "firelight"
-	base_state = "firelight"
-	fitting = "emergency"
-	brightness = 2
-	desc = "A small dim light, telling you when to run."
-	light_type = /obj/item/weapon/light/bulb/emergency
-	idle_power_usage = 0
-	active_power_usage = 0
-	var/sm_alert = 1
 
 
 /obj/machinery/light/Move()
@@ -272,6 +261,11 @@
 
 	update_icon()
 	if(on)
+		if(special == 1)
+			if(GLOB.emergency_light == 1)
+				set_light(brightness, 0.5, "#ff0000")
+			else
+				set_light(0, 0.5, "#ff0000")
 		if(!light || light.light_range != brightness)
 			switchcount++
 			if(rigged)
@@ -282,17 +276,23 @@
 					burn_out()
 			else
 				use_power = ACTIVE_POWER_USE
-				set_light(brightness)
+	else if(special == 1)
+		if(GLOB.emergency_light == 1)
+			set_light(2, 0.5, "#ff0000")
+		else
+			brightness = 0
+
+
 	else
 		use_power = IDLE_POWER_USE
 		set_light(0)
-
 	active_power_usage = (brightness * 10)
 	if(on != on_gs)
 		on_gs = on
 		if(on)
-			static_power_used = brightness * 20 //20W per unit luminosity
-			addStaticPower(static_power_used, STATIC_LIGHT)
+			if(special != 1)
+				static_power_used = brightness * 20 //20W per unit luminosity
+				addStaticPower(static_power_used, STATIC_LIGHT)
 		else
 			removeStaticPower(static_power_used, STATIC_LIGHT)
 
@@ -441,7 +441,10 @@
 // true if area has power and lightswitch is on
 /obj/machinery/light/proc/has_power()
 	var/area/A = get_area(src)
-	return A.lightswitch && A.power_light
+	if(special == 1)
+		return TRUE
+	else
+		return A.lightswitch && A.power_light
 
 /obj/machinery/light/proc/flicker(var/amount = rand(10, 20))
 	set waitfor = 0
@@ -693,3 +696,14 @@
 	layer = 2.5
 	light_type = /obj/item/weapon/light/bulb
 	fitting = "bulb"
+
+/obj/machinery/light/small/emergency //set_light(2, 0.5, "#ff0000")
+	icon_state = "firelight"
+	base_state = "firelight"
+	fitting = "bulb"
+	brightness = 0
+	use_power = NO_POWER_USE
+	desc = "A small dim light, telling you when to run."
+	light_type = /obj/item/weapon/light/bulb/emergency
+	status = LIGHT_OK
+	special = 1

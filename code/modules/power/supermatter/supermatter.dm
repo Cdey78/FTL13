@@ -2,7 +2,7 @@
 //Please do not bother them with bugs from this port, however, as it has been modified quite a bit.
 //Modifications include removing the world-ending full supermatter variation, and leaving only the shard.
 
-GLOBAL_VAR_INIT(emergency_light, 0)
+
 #define PLASMA_HEAT_PENALTY 15     // Higher == Bigger heat and waste penalty from having the crystal surrounded by this gas. Negative numbers reduce penalty.
 #define OXYGEN_HEAT_PENALTY 1
 #define CO2_HEAT_PENALTY 0.1
@@ -128,6 +128,10 @@ GLOBAL_VAR_INIT(emergency_light, 0)
 	var/produces_gas = TRUE
 	var/obj/effect/countdown/supermatter/countdown
 
+	//For alert changes
+	var/previous_level = ""
+	var/alert_set = 0
+
 /obj/machinery/power/supermatter_shard/experience_pressure_difference() // We eat matter for breakfast, gas shouldn't push us around
 	return
 
@@ -168,26 +172,29 @@ GLOBAL_VAR_INIT(emergency_light, 0)
 /obj/machinery/power/supermatter_shard/get_spans()
 	return list(SPAN_ROBOT)
 
+
 #define CRITICAL_TEMPERATURE 10000
+
 
 /obj/machinery/power/supermatter_shard/proc/get_status()
 	var/turf/T = get_turf(src)
 	if(!T)
 		return SUPERMATTER_ERROR
 	var/datum/gas_mixture/air = T.return_air()
+
+	for(damage > emergency_point)
+		delta_alert()
 	if(!air)
 		return SUPERMATTER_ERROR
 
 	if(get_integrity() < SUPERMATTER_DELAM_PERCENT)
 		return SUPERMATTER_DELAMINATING
-		if(GLOB.security_level != SEC_LEVEL_DELTA)
-			set_security_level("delta")
 
 	if(get_integrity() < SUPERMATTER_EMERGENCY_PERCENT)
 		return SUPERMATTER_EMERGENCY
-		GLOB.emergency_light = 1
 
 	if(get_integrity() < SUPERMATTER_DANGER_PERCENT)
+		secure_alert()
 		return SUPERMATTER_DANGER
 
 	if((get_integrity() < SUPERMATTER_WARNING_PERCENT) || (air.temperature > CRITICAL_TEMPERATURE))
@@ -199,6 +206,30 @@ GLOBAL_VAR_INIT(emergency_light, 0)
 	if(power > 5)
 		return SUPERMATTER_NORMAL
 	return SUPERMATTER_INACTIVE
+
+/obj/machinery/power/supermatter_shard/proc/delta_alert()
+	if(alert_set == 0)
+		GLOB.emergency_light = 1
+		alert_set = 1
+		get_security_level()
+		if(previous_level == ("delta"))
+			return "Delta_is_already_set"
+		else
+			previous_level = get_security_level()
+			set_security_level("delta")
+			for(var/obj/machinery/light/small/emergency/E in GLOB.machines)
+				E.update_light()
+			return "Delta_set"
+	else
+		return "Alert_already_set"
+
+/obj/machinery/power/supermatter_shard/proc/secure_alert()
+	if(alert_set == 1)
+		set_security_level(previous_level)
+		alert_set = 0
+		GLOB.emergency_light = 0
+	else
+		return
 
 /obj/machinery/power/supermatter_shard/proc/alarm()
 	switch(get_status())
