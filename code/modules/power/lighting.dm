@@ -263,7 +263,7 @@ GLOBAL_VAR_INIT(emergency_light, 0)
 	if(on)
 		if(special == 1)
 			if(GLOB.emergency_light == 1)
-				set_light(brightness, 0.5, "#ff0000")
+				set_light(2, 0.5, "#ff0000")
 			else
 				set_light(0, 0.5, "#ff0000")
 		if(!light || light.light_range != brightness)
